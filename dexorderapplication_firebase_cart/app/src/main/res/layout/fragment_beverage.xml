@@ -1,0 +1,267 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".BeverageFragment">
+
+    <TextView
+        android:id="@+id/pwadeTxt"
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:layout_marginTop="8dp"
+        android:text=" 파워에이드 600ml"
+        android:textSize="20dp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="@+id/img_pwa"
+        app:layout_constraintStart_toStartOf="@+id/img_pwa"
+        app:layout_constraintTop_toBottomOf="@+id/img_pwa">
+
+    </TextView>
+
+    <TextView
+        android:id="@+id/pwadeCost"
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:layout_marginTop="8dp"
+        android:text="2000"
+        android:textSize="20dp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="@+id/pwadeTxt"
+        app:layout_constraintHorizontal_bias="0.359"
+        app:layout_constraintStart_toStartOf="@+id/pwadeTxt"
+        app:layout_constraintTop_toBottomOf="@+id/pwadeTxt">
+
+    </TextView>
+
+    <TextView
+        android:id="@+id/colaCost"
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:layout_marginTop="8dp"
+        android:text="2000"
+        android:textSize="20dp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="@+id/colaTxt"
+        app:layout_constraintHorizontal_bias="0.329"
+        app:layout_constraintStart_toStartOf="@+id/colaTxt"
+        app:layout_constraintTop_toBottomOf="@+id/colaTxt">
+
+    </TextView>
+
+    <TextView
+        android:id="@+id/pwadeTxt3"
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:text="원"
+        android:textSize="20dp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@+id/colaCost"
+        app:layout_constraintStart_toEndOf="@+id/colaCost"
+        app:layout_constraintTop_toTopOf="@+id/colaCost">
+
+    </TextView>
+
+    <TextView
+        android:id="@+id/pwadeTxt5"
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:layout_marginStart="2dp"
+        android:layout_marginTop="8dp"
+        android:text="원"
+        android:textSize="20dp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@+id/pwadeCost"
+        app:layout_constraintStart_toEndOf="@+id/pwadeCost"
+        app:layout_constraintTop_toBottomOf="@+id/pwadeTxt">
+
+    </TextView>
+
+    <TextView
+        android:id="@+id/colaTxt"
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:layout_marginTop="8dp"
+        android:text="코카콜라 500ml"
+        android:textSize="20dp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="@+id/img_cola"
+        app:layout_constraintHorizontal_bias="0.452"
+        app:layout_constraintStart_toStartOf="@+id/img_cola"
+        app:layout_constraintTop_toBottomOf="@+id/img_cola">
+
+    </TextView>
+
+    <TextView
+        android:id="@+id/spriteTxt"
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:layout_marginTop="8dp"
+        android:text="스프라이트 500ml"
+        android:textSize="20dp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="@+id/img_sprite"
+        app:layout_constraintStart_toStartOf="@+id/img_sprite"
+        app:layout_constraintTop_toBottomOf="@+id/img_sprite">
+
+    </TextView>
+
+    <TextView
+        android:id="@+id/proTxt"
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:layout_marginTop="8dp"
+        android:text="이프로 500ml"
+        android:textSize="20dp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="@+id/img_2pro"
+        app:layout_constraintStart_toStartOf="@+id/img_2pro"
+        app:layout_constraintTop_toBottomOf="@+id/img_2pro">
+
+    </TextView>
+
+    <ImageView
+        android:id="@+id/img_pwa"
+        android:layout_width="95dp"
+        android:layout_height="94dp"
+        android:layout_marginStart="60dp"
+        android:layout_marginTop="72dp"
+        android:src="@drawable/img_pa"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+    </ImageView>
+
+    <ImageView
+        android:id="@+id/img_cola"
+        android:layout_width="95dp"
+        android:layout_height="94dp"
+        android:layout_marginTop="72dp"
+        android:layout_marginEnd="60dp"
+        android:src="@drawable/img_cola"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+    </ImageView>
+
+    <ImageView
+        android:id="@+id/img_sprite"
+        android:layout_width="95dp"
+        android:layout_height="94dp"
+        android:layout_marginStart="60dp"
+        android:layout_marginTop="100dp"
+        android:src="@drawable/img_sprite"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btn_add_beverage_cart">
+
+    </ImageView>
+
+    <ImageView
+        android:id="@+id/img_2pro"
+        android:layout_width="95dp"
+        android:layout_height="94dp"
+        android:layout_marginTop="100dp"
+        android:layout_marginEnd="60dp"
+        android:src="@drawable/img_2pro"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btn_add_cola">
+
+    </ImageView>
+
+    <Button
+        android:id="@+id/btn_add_beverage_cart"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="72dp"
+        android:text="장바구니에 추가"
+        app:layout_constraintEnd_toEndOf="@+id/img_pwa"
+        app:layout_constraintHorizontal_bias="0.487"
+        app:layout_constraintStart_toStartOf="@+id/img_pwa"
+        app:layout_constraintTop_toBottomOf="@+id/pwadeTxt" />
+
+    <Button
+        android:id="@+id/btn_add_cola"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="2dp"
+        android:layout_marginTop="72dp"
+        android:text="장바구니에 추가"
+        app:layout_constraintEnd_toEndOf="@+id/img_cola"
+        app:layout_constraintHorizontal_bias="0.414"
+        app:layout_constraintStart_toStartOf="@+id/img_cola"
+        app:layout_constraintTop_toBottomOf="@+id/colaTxt" />
+
+    <Button
+        android:id="@+id/btn_add_sprite"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="72dp"
+        android:text="장바구니에 추가"
+        app:layout_constraintEnd_toEndOf="@+id/img_sprite"
+        app:layout_constraintHorizontal_bias="0.487"
+        app:layout_constraintStart_toStartOf="@+id/img_sprite"
+        app:layout_constraintTop_toBottomOf="@+id/spriteTxt" />
+
+    <Button
+        android:id="@+id/btn_add_2pro"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="72dp"
+        android:text="장바구니에 추가"
+        app:layout_constraintEnd_toEndOf="@+id/img_2pro"
+        app:layout_constraintStart_toStartOf="@+id/img_2pro"
+        app:layout_constraintTop_toBottomOf="@+id/proTxt" />
+
+    <TextView
+        android:id="@+id/spriteCost"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="2000"
+        android:textSize="20dp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="@+id/spriteTxt"
+        app:layout_constraintHorizontal_bias="0.357"
+        app:layout_constraintStart_toStartOf="@+id/spriteTxt"
+        app:layout_constraintTop_toBottomOf="@+id/spriteTxt" />
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="2dp"
+        android:text="원"
+        android:textSize="20dp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@+id/spriteCost"
+        app:layout_constraintStart_toEndOf="@+id/spriteCost"
+        app:layout_constraintTop_toTopOf="@+id/spriteCost"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <TextView
+        android:id="@+id/proCost"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="2000"
+        android:textSize="20dp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="@+id/proTxt"
+        app:layout_constraintHorizontal_bias="0.319"
+        app:layout_constraintStart_toStartOf="@+id/proTxt"
+        app:layout_constraintTop_toBottomOf="@+id/proTxt" />
+
+    <TextView
+        android:id="@+id/textView6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="2dp"
+        android:text="원"
+        android:textSize="20dp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@+id/proCost"
+        app:layout_constraintStart_toEndOf="@+id/proCost"
+        app:layout_constraintTop_toTopOf="@+id/proCost" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

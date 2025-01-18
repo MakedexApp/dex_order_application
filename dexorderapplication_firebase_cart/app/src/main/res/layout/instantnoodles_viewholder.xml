@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/instantnoodlelayout"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <Button
+        android:id="@+id/btn_add_instantnoodledetail"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="32dp"
+        android:text="장바구니에 추가"
+        app:layout_constraintBottom_toBottomOf="@+id/instantnoodlesImg"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/instantnoodlesTitle" />
+
+    <TextView
+        android:id="@+id/instantnoodlesFee"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="4dp"
+        android:layout_marginTop="16dp"
+        android:text="2000"
+        android:textSize="20dp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="@+id/instantnoodlesTitle"
+        app:layout_constraintTop_toBottomOf="@+id/instantnoodlesTitle">
+
+    </TextView>
+
+    <TextView
+        android:id="@+id/textview1"
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:layout_marginStart="2dp"
+        android:text="원"
+        android:textSize="20dp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@+id/instantnoodlesFee"
+        app:layout_constraintStart_toEndOf="@+id/instantnoodlesFee"
+        app:layout_constraintTop_toTopOf="@+id/instantnoodlesFee">
+
+    </TextView>
+
+    <TextView
+        android:id="@+id/instantnoodlesTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:layout_marginStart="24dp"
+        android:text="삼양라면"
+        android:textSize="20dp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toEndOf="@+id/instantnoodlesImg"
+        app:layout_constraintTop_toTopOf="@+id/instantnoodlesImg">
+
+    </TextView>
+
+    <ImageView
+        android:id="@+id/instantnoodlesImg"
+        android:layout_width="95dp"
+        android:layout_height="94dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="56dp"
+        android:layout_marginBottom="24dp"
+        android:src="@drawable/img_samyang"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+    </ImageView>
+</androidx.constraintlayout.widget.ConstraintLayout>

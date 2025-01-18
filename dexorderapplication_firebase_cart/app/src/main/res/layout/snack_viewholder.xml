@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/snacklayout"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <Button
+        android:id="@+id/btn_add_snackdetail"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="32dp"
+        android:text="장바구니에 추가"
+        app:layout_constraintBottom_toBottomOf="@+id/snackImg"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/snackTitle" />
+
+    <TextView
+        android:id="@+id/snackFee"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="2000"
+        android:textSize="20dp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@+id/snackImg"
+        app:layout_constraintStart_toStartOf="@+id/snackTitle"
+        app:layout_constraintTop_toBottomOf="@+id/snackTitle">
+
+    </TextView>
+
+    <TextView
+        android:id="@+id/textview1"
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:layout_marginStart="2dp"
+        android:text="원"
+        android:textSize="20dp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@+id/snackFee"
+        app:layout_constraintStart_toEndOf="@+id/snackFee"
+        app:layout_constraintTop_toTopOf="@+id/snackFee">
+
+    </TextView>
+
+    <TextView
+        android:id="@+id/snackTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:layout_marginStart="24dp"
+        android:text="쫄병"
+        android:textSize="20dp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toEndOf="@+id/snackImg"
+        app:layout_constraintTop_toTopOf="@+id/snackImg">
+
+    </TextView>
+
+    <ImageView
+        android:id="@+id/snackImg"
+        android:layout_width="95dp"
+        android:layout_height="94dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="56dp"
+        android:layout_marginBottom="24dp"
+        android:src="@drawable/img_jb"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+    </ImageView>
+</androidx.constraintlayout.widget.ConstraintLayout>
