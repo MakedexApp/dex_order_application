@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "336422000548",
+    "project_id": "dex-order-application",
+    "storage_bucket": "dex-order-application.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:336422000548:android:a5342c3f520e139f389331",
+        "android_client_info": {
+          "package_name": "com.example.dexorderapplication"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "336422000548-f8msippb498obu6ulij24lraa2jgrrei.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDIlqvkPr-6gTJP_1jw2eMLC1MOkXifAls"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "336422000548-f8msippb498obu6ulij24lraa2jgrrei.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

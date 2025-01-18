@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".BeverageFragment">
+
+    <TextView
+        android:id="@+id/pwadeTxt"
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:layout_marginTop="8dp"
+        android:text=" 감자깡"
+        android:textSize="20dp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="@+id/img_pwa"
+        app:layout_constraintStart_toStartOf="@+id/img_pwa"
+        app:layout_constraintTop_toBottomOf="@+id/img_pwa">
+
+    </TextView>
+
+    <TextView
+        android:id="@+id/colaTxt"
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:layout_marginTop="8dp"
+        android:text="포카칩"
+        android:textSize="20dp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="@+id/img_cola"
+        app:layout_constraintHorizontal_bias="0.452"
+        app:layout_constraintStart_toStartOf="@+id/img_cola"
+        app:layout_constraintTop_toBottomOf="@+id/img_cola">
+
+    </TextView>
+
+    <TextView
+        android:id="@+id/spriteTxt"
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:layout_marginTop="8dp"
+        android:text="허니버터칩"
+        android:textSize="20dp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="@+id/img_sprite"
+        app:layout_constraintStart_toStartOf="@+id/img_sprite"
+        app:layout_constraintTop_toBottomOf="@+id/img_sprite">
+
+    </TextView>
+
+    <TextView
+        android:id="@+id/proTxt"
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:layout_marginTop="8dp"
+        android:text="에이스"
+        android:textSize="20dp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="@+id/img_2pro"
+        app:layout_constraintStart_toStartOf="@+id/img_2pro"
+        app:layout_constraintTop_toBottomOf="@+id/img_2pro">
+
+    </TextView>
+
+    <ImageView
+        android:id="@+id/img_pwa"
+        android:layout_width="95dp"
+        android:layout_height="94dp"
+        android:layout_marginStart="60dp"
+        android:layout_marginTop="100dp"
+        android:src="@drawable/img_potato"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+    </ImageView>
+
+    <ImageView
+        android:id="@+id/img_cola"
+        android:layout_width="95dp"
+        android:layout_height="94dp"
+        android:layout_marginTop="100dp"
+        android:layout_marginEnd="60dp"
+        android:src="@drawable/img_pokachip"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+    </ImageView>
+
+    <ImageView
+        android:id="@+id/img_sprite"
+        android:layout_width="95dp"
+        android:layout_height="94dp"
+        android:layout_marginStart="60dp"
+        android:layout_marginTop="100dp"
+        android:src="@drawable/img_honey"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btn_add_potato">
+
+    </ImageView>
+
+    <ImageView
+        android:id="@+id/img_2pro"
+        android:layout_width="95dp"
+        android:layout_height="94dp"
+        android:layout_marginTop="100dp"
+        android:layout_marginEnd="60dp"
+        android:src="@drawable/img_ace"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btn_add_pokachip">
+
+    </ImageView>
+
+    <Button
+        android:id="@+id/btn_add_potato"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="장바구니에 추가"
+        app:layout_constraintEnd_toEndOf="@+id/img_pwa"
+        app:layout_constraintStart_toStartOf="@+id/img_pwa"
+        app:layout_constraintTop_toBottomOf="@+id/pwadeTxt" />
+
+    <Button
+        android:id="@+id/btn_add_pokachip"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="장바구니에 추가"
+        app:layout_constraintEnd_toEndOf="@+id/img_cola"
+        app:layout_constraintStart_toStartOf="@+id/img_cola"
+        app:layout_constraintTop_toBottomOf="@+id/colaTxt" />
+
+    <Button
+        android:id="@+id/btn_add_honey"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="장바구니에 추가"
+        app:layout_constraintEnd_toEndOf="@+id/img_sprite"
+        app:layout_constraintStart_toStartOf="@+id/img_sprite"
+        app:layout_constraintTop_toBottomOf="@+id/spriteTxt" />
+
+    <Button
+        android:id="@+id/btn_add_ace"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="장바구니에 추가"
+        app:layout_constraintEnd_toEndOf="@+id/img_2pro"
+        app:layout_constraintStart_toStartOf="@+id/img_2pro"
+        app:layout_constraintTop_toBottomOf="@+id/proTxt" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,223 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity_previous">
+
+
+    <TextView
+        android:id="@+id/hrb_amount"
+        android:layout_width="31dp"
+        android:layout_height="29dp"
+        android:layout_marginTop="8dp"
+        android:text="수량"
+        android:textSize="12sp"
+        app:layout_constraintStart_toStartOf="@+id/tv_hrb"
+        app:layout_constraintTop_toBottomOf="@+id/tv_hrb" />
+
+    <TextView
+        android:id="@+id/swc_amount"
+        android:layout_width="31dp"
+        android:layout_height="29dp"
+        android:layout_marginTop="8dp"
+        android:text="수량"
+        android:textSize="12sp"
+        app:layout_constraintStart_toStartOf="@+id/tv_swc"
+        app:layout_constraintTop_toBottomOf="@+id/tv_swc" />
+
+    <TextView
+        android:id="@+id/tv_hrb"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="홈런볼"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toEndOf="@+id/iv_hrb"
+        app:layout_constraintStart_toStartOf="@+id/iv_hrb"
+        app:layout_constraintTop_toBottomOf="@+id/iv_hrb" />
+
+    <TextView
+        android:id="@+id/tv_swc"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="스윙칩"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toEndOf="@+id/iv_swc"
+        app:layout_constraintStart_toStartOf="@+id/iv_swc"
+        app:layout_constraintTop_toBottomOf="@+id/iv_swc" />
+
+    <ImageView
+        android:id="@+id/iv_poka"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="64dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@mipmap/ic_launcher" />
+
+    <ImageView
+        android:id="@+id/iv_hrb"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="228dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@mipmap/ic_launcher" />
+
+    <ImageView
+        android:id="@+id/iv_swc"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="392dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@mipmap/ic_launcher" />
+
+    <TextView
+        android:id="@+id/tv_poka"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="포카칩"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toEndOf="@+id/iv_poka"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="@+id/iv_poka"
+        app:layout_constraintTop_toBottomOf="@+id/iv_poka" />
+
+    <Button
+        android:id="@+id/poka_plus"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="96dp"
+        android:text="+"
+        android:textSize="20sp"
+        app:layout_constraintStart_toEndOf="@+id/iv_poka"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/hrb_plus"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="256dp"
+        android:text="+"
+        android:textSize="20sp"
+        app:layout_constraintStart_toEndOf="@+id/iv_hrb"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/swc_plus"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="416dp"
+        android:text="+"
+        android:textSize="20sp"
+        app:layout_constraintStart_toEndOf="@+id/iv_swc"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/poka_minus"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="-"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="@+id/poka_plus"
+        app:layout_constraintStart_toStartOf="@+id/poka_plus"
+        app:layout_constraintTop_toBottomOf="@+id/poka_plus" />
+
+    <Button
+        android:id="@+id/hrb_minus"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:text="-"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="@+id/hrb_plus"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/hrb_plus"
+        app:layout_constraintTop_toTopOf="@+id/tv_hrb" />
+
+    <Button
+        android:id="@+id/swc_minus"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="-"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="@+id/swc_plus"
+        app:layout_constraintStart_toStartOf="@+id/swc_plus"
+        app:layout_constraintTop_toBottomOf="@+id/swc_plus" />
+
+    <TextView
+        android:id="@+id/poka_amount"
+        android:layout_width="31dp"
+        android:layout_height="29dp"
+        android:layout_marginTop="8dp"
+        android:text="수량"
+        android:textSize="12sp"
+        app:layout_constraintStart_toStartOf="@+id/tv_poka"
+        app:layout_constraintTop_toBottomOf="@+id/tv_poka" />
+
+    <TextView
+        android:id="@+id/poka_count"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:gravity="center"
+        android:text="0"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toBottomOf="@+id/poka_amount"
+        app:layout_constraintEnd_toEndOf="@+id/tv_poka"
+        app:layout_constraintStart_toEndOf="@+id/poka_amount"
+        app:layout_constraintTop_toBottomOf="@+id/tv_poka" />
+
+    <TextView
+        android:id="@+id/hrb_count"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:gravity="center"
+        android:text="0"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toBottomOf="@+id/hrb_amount"
+        app:layout_constraintEnd_toEndOf="@+id/tv_hrb"
+        app:layout_constraintStart_toEndOf="@+id/hrb_amount"
+        app:layout_constraintTop_toBottomOf="@+id/tv_hrb" />
+
+    <TextView
+        android:id="@+id/swc_count"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:gravity="center"
+        android:text="0"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toBottomOf="@+id/swc_amount"
+        app:layout_constraintEnd_toEndOf="@+id/tv_swc"
+        app:layout_constraintStart_toEndOf="@+id/swc_amount"
+        app:layout_constraintTop_toBottomOf="@+id/tv_swc" />
+
+    <Button
+        android:id="@+id/btn_order"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="12dp"
+        android:layout_marginEnd="12dp"
+        android:layout_marginBottom="56dp"
+        android:text="주문"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
