@@ -59,3 +59,29 @@
 - **프론트엔드**: [ Android Studio, JAVA ]
 - **백엔드**: [ Firebase ]
 - **데이터베이스**: [ Firestore ]
+
+## 폴더 구조
+
+```
+dex_order_application/
+└── dexorderapplication_firebase_cart/
+    └── app/src/main/java/com/example/dexorderapplication/
+        ├── Activity/      # MainActivity, LoginActivity, RegisterActivity, CartListActivity,
+        │                  # PaymentActivity, ManageActivity(관리자), OrderInformation, ShowDetailActivity
+        ├── Adapter/       # 음료/과자/라면/장바구니 RecyclerView 어댑터
+        ├── Domain/        # BeverageDomain, ItemDomain (상품 데이터 모델)
+        ├── Helper/        # ManagementCart(장바구니 상태), TinyDB(로컬 저장)
+        ├── Interface/     # ChangeNumberItemsListener 등 콜백 인터페이스
+        └── MyService.java, MyBroadcastReceiver.java, NoticeArrival.java  # 도착 알림(백그라운드)
+```
+
+## 실행 방법
+
+1. `dexorderapplication_firebase_cart/`를 Android Studio로 엽니다.
+2. Firebase 프로젝트를 연결합니다 (`app/google-services.json`은 이미 포함되어 있으니, 본인 Firebase 프로젝트로 교체하려면 Firebase 콘솔에서 새로 받아서 덮어씁니다).
+3. 에뮬레이터 또는 실기기에서 실행합니다. 회원가입 → 상품 탭(음료/과자/라면)에서 장바구니 추가 → 결제(가상 카드번호 입력) → 도착 알림까지 흐름을 확인할 수 있습니다.
+
+## 참고
+
+- `MainActivity_previous.java` / `activity_main_previous.xml`은 이전 버전 UI로, 지금은 `Activity/MainActivity.java`가 실제로 쓰이는 메인 화면입니다. 혼동 방지용으로 남겨두신 것 같은데, 더 이상 필요 없으면 지워도 되는 파일입니다.
+- 실제 배달로봇(하드웨어/주행 제어) 부분은 이 저장소 범위 밖이고, 이 레포는 주문 어플 쪽만 담당합니다 (README 상단에도 명시되어 있음).
